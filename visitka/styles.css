@@ -64,7 +64,7 @@ body{
   align-items: center;
   justify-content: center;
   color:white;
-  font-size: 3rem;
+  font-size: 5rem;
   text-shadow: 0 0 1px black;
   animation: text-shake 2s ease-in-out infinite;
 }
