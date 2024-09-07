@@ -53,8 +53,8 @@ body{
 .header-avatar::after{
   position: absolute;
   content: '';
-  width: 150%;
-  height: 150%;
+  width: 110%;
+  height: 110%;
   background: url('/avatar-border.webp') no-repeat;
   background-size: cover;
 }
