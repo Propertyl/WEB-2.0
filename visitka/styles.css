@@ -19,13 +19,14 @@ body{
   position: relative;
   width: 100%;
   height:25rem;
+  display: flex;
   justify-content: center;
 }
 .visitka-header::after{
   position: absolute;
   content: '';
   width:50%;
-  height:4rem;
+  height:10rem;
   background: url('/wall.png') repeat-x center center fixed;
   background-size:cover;
 
