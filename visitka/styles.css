@@ -55,7 +55,7 @@ body{
   content: '';
   width: 110%;
   height: 110%;
-  background: url('/avatar-border.webp') no-repeat;
+  background: url('/avatar-border.webp') no-repeat center center;
   background-size: cover;
 }
 .visitka-text{
