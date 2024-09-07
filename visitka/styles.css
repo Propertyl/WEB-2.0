@@ -27,8 +27,8 @@ body{
   top: 100%;
   content: '';
   width:50%;
-  height:10rem;
-  background: url('/wall.png') repeat-x center center fixed;
+  height:15rem;
+  background: url('/wall.png') repeat-x  fixed;
 }
 .container{
   position: relative;
