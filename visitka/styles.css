@@ -40,8 +40,13 @@ body{
   position: relative;
   width: 25rem;
   height:22rem;
-  object-fit: cover;
+ 
+}
+.header-avatar  img{
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
+  object-fit: cover;
 }
 .header-avatar::after{
   position: absolute;
