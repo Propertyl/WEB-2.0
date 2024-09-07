@@ -27,7 +27,7 @@ body{
   top: 100%;
   content: '';
   width:50%;
-  height:15rem;
+  height:100px;
   background: url('/wall.png') repeat-x center center  fixed;
 }
 .container{
