@@ -24,12 +24,11 @@ body{
 }
 .visitka-header::after{
   position: absolute;
+  top: 100%;
   content: '';
   width:50%;
   height:10rem;
   background: url('/wall.png') repeat-x center center fixed;
-  background-size:cover;
-
 }
 .container{
   position: relative;
