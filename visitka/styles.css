@@ -64,7 +64,7 @@ body{
   justify-content: center;
   color:white;
   font-size: 5rem;
-  -webkit-text-stroke: .2rem black;
+  -webkit-text-stroke: .07rem black;
   animation: text-shake 2s ease-in-out infinite;
 }
 
