@@ -32,21 +32,25 @@ body{
    width: 50%;
    height: 100%;
    display: flex;
+   align-items: center;
+   justify-content: center;
    padding: 2rem 0;
 }
 .header-avatar{
   position: relative;
-  width: 10rem;
+  width: 25rem;
   height:20rem;
   object-fit: cover;
+  border-radius: 20px;
 }
-.header-avatar::after{
+.initial-block[data-avatar-block]::after{
   position: absolute;
   content: '';
   width: 100%;
   height: 100%;
   background: url('/grass.webp') repeat-x fixed;
   background-position: 0% 0%;
+  background-size: 4rem;
 }
 
 @media (min-width:1920px){
