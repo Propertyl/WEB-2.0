@@ -2,6 +2,7 @@ body{
   margin: 0;
   width: 100vw;
   min-height: 100vh;
+  font-size: 1rem;
 }
 *{
   box-sizing: content-box;
@@ -32,42 +33,42 @@ body{
      font-size: 18px;
    }
 }
-@media (max-width:1919px) and (min-width:1850px){
+@media (max-width:1919px) and (min-width:1851px){
   html{
     font-size: 17px;
   }
 }
-@media (max-width:1849px) and (min-width:1750px){
+@media (max-width:1850px) and (min-width:1751px){
   html{
     font-size: 16px;
   }
 }
-@media (max-width:1749px) and (min-width:1650px){
+@media (max-width:1750px) and (min-width:1651px){
   html{
     font-size: 15px;
   }
 }
-@media (max-width:1649px) and (min-width:1550px){
+@media (max-width:1650px) and (min-width:1551px){
   html{
     font-size: 14px;
   }
 }
-@media (max-width:1549px) and (min-width:1450px){
+@media (max-width:1550px) and (min-width:1451px){
   html{
     font-size: 13px;
   }
 }
-@media (max-width:1449px) and (min-width:1350px){
+@media (max-width:1450px) and (min-width:1351px){
   html{
     font-size: 12px;
   }
 }
-@media (max-width:1349px) and (min-width:1250px){
+@media (max-width:1350px) and (min-width:1251px){
   html{
     font-size: 11px;
   }
 }
-@media (max-width:1249px) and (min-width:1150px){
+@media (max-width:1250px) and (min-width:1151px){
   html{
     font-size: 10px;
   }
