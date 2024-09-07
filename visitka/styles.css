@@ -40,7 +40,9 @@ body{
   position: relative;
   width: 25rem;
   height:22rem;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-avatar  img{
   width: 100%;
