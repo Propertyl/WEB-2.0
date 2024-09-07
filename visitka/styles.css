@@ -56,7 +56,7 @@ body{
   width: 105%;
   height: 105%;
   background: url('/avatar-border.webp') no-repeat center center;
-  background-size:90% 90%;
+  background-size:95% 95%;
 }
 .visitka-text{
   display: flex;
