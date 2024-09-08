@@ -27,8 +27,9 @@ body{
   top: 100%;
   content: '';
   width:50%;
-  height:100px;
+  height:10rem;
   background: url('/wall.png') repeat-x center center  fixed;
+  background-size: contain;
 }
 .container{
   position: relative;
@@ -66,7 +67,7 @@ body{
   width: 105%;
   height: 105%;
   background: url('/avatar-border.webp') no-repeat center center;
-  background-size:contain;
+  background-size:101% 101%;
 }
 .visitka-text{
   display: flex;
