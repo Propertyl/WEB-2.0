@@ -3,10 +3,13 @@ body{
   width: 100vw;
   min-height: 100vh;
   font-size: 1rem;
+  overflow-x: hidden;
 }
 *{
   box-sizing: content-box;
+  margin: 0;
 }
+
 .background{
   position: absolute;
   width: 100vw;
@@ -26,10 +29,9 @@ body{
   position: absolute;
   top: 100%;
   content: '';
-  width:50%;
-  height:10rem;
-  background: url('/wall.png') repeat-x center center  fixed;
-  background-size: contain;
+  width:90%;
+  height:4rem;
+  background-image: url('/visitka//public/wall.png');
 }
 .container{
   position: relative;
@@ -47,6 +49,9 @@ body{
    justify-content: center;
    padding: 2rem 0;
 }
+.initial-block[data-text-block]{
+  flex-direction: column;
+}
 .header-avatar{
   position: relative;
   width: 25rem;
@@ -54,29 +59,55 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .header-avatar  img{
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
+  width: 80%;
+  height:90%;
   object-fit: cover;
+  transition: all .2s;
 }
+
 .header-avatar::after{
   position: absolute;
   content: '';
-  width: 105%;
-  height: 105%;
-  background: url('/avatar-border.webp') no-repeat center center;
-  background-size:101% 101%;
+  width: 100%;
+  height: 100%;
+  background: url('../visitka/public/avatar-border.webp') no-repeat center center;
+  background-size:contain;
+  overflow: hidden;
 }
 .visitka-text{
+  width:90%;
+  height:50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color:white;
   font-size: 5rem;
-  -webkit-text-stroke: .07rem black;
-  animation: text-shake 2s ease-in-out infinite;
+  background: url('/visitka//public/pixel\ name.png') no-repeat center center fixed;
+  background-size:70% 100%;
+  animation: text-shake 3s ease-in-out infinite;
+}
+.visitka-text[data-sub-text]{
+  animation: none;
+  background: url('/visitka//public/visitka-sub-info.png') no-repeat center center;
+  background-size: 80% 80%;
+}
+
+.visitka-main{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 12rem);
+  display: flex;
+}
+
+.visitka-footer{
+  position: relative;
+  top:100%;
+  width: 100%;
+  height:3rem;
+  display: flex;
 }
 
 @keyframes text-shake {
