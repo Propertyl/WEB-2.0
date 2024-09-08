@@ -1,23 +1,21 @@
+
 body{
+  position: fixed;
   margin: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   font-size: 1rem;
-  overflow-x: hidden;
+  overflow: hidden;
+  background: url("https://forums.terraria.org/index.php?attachments/31583") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 *{
   box-sizing: content-box;
   margin: 0;
 }
 
-.background{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background: url("https://forums.terraria.org/index.php?attachments/31583") no-repeat center center fixed;
-  background-size: cover;
-}
 .visitka-header{
   position: relative;
   width: 100%;
@@ -59,7 +57,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+
 }
 .header-avatar  img{
   width: 80%;
@@ -97,10 +95,36 @@ body{
 
 .visitka-main{
   position: relative;
+  padding-top: 3rem;
   width: 100%;
-  height: calc(100% - 12rem);
   display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
 }
+.main-section-header{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+.fav-games-logo{
+  width:100%;
+  display:inherit;
+  height:100%;
+  background: url('/visitka//public/fav-games.png') no-repeat center center;
+  background-size:contain;
+}
+.games-section{
+  position: relative;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:calc(100% - 10%);
+  flex-wrap: wrap;
+}
+
 
 .visitka-footer{
   position: relative;
@@ -108,6 +132,50 @@ body{
   width: 100%;
   height:3rem;
   display: flex;
+}
+.fav-game-section{
+  position: relative;
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.fav-game-section:hover .fav-game-image{
+  transform: scale(1.2);
+}
+.fav-game-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:all .2s;
+}
+
+.fav-game-section:hover::after{
+  content:attr(data-text-content);
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height:3rem;
+  background-color: rgba(0,0,0,.5);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:white;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  animation: appear-from-down .3s forwards;
+}
+
+@keyframes appear-from-down{
+  from{
+    transform: translateY(50%);
+  }
+  to{
+    transform: translateY(0%);
+  }
 }
 
 @keyframes text-shake {
@@ -185,4 +253,43 @@ body{
   html{
     font-size: 8px;
   }
+}
+
+@media (max-width:620px) and (min-width:340px){
+   html{
+    font-size:5px;
+   }
+   .visitka-header{
+    height: 30%;
+   }
+   .header-avatar{
+     width: 80%;
+     height:35rem;
+   }
+   .header-avatar img{
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+   }
+   .header-avatar::after{
+    width:110%;
+    height:110%;
+    background-size: 95% 100%;
+    overflow: auto;
+   }
+   .visitka-text{
+    width: 100%;
+    background-size:100% 100%;
+   }
+   .visitka-text[data-sub-text]{
+    background-size: 110% 100%;
+   }
+   .fav-game-section{
+    width:40rem;
+    height: 20rem;
+   }
+   .fav-game-section:hover::after{
+      font-size: 3rem;
+      height: 5rem;
+   }
 }
