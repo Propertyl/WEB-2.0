@@ -264,6 +264,7 @@ body{
    }
    body{
     overflow-y:auto;
+    overflow-x: hidden;
    }
    .visitka-header{
     height: 30%;
