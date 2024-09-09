@@ -29,7 +29,7 @@ body{
   content: '';
   width:90%;
   height:4rem;
-  background-image: url('/visitka//public/wall.png');
+  background-image: url('wall.png');
 }
 .container{
   position: relative;
@@ -71,7 +71,7 @@ body{
   content: '';
   width: 100%;
   height: 100%;
-  background: url('../visitka/public/avatar-border.webp') no-repeat center center;
+  background: url('avatar-border.webp') no-repeat center center;
   background-size:contain;
   overflow: hidden;
 }
@@ -83,13 +83,13 @@ body{
   justify-content: center;
   color:white;
   font-size: 5rem;
-  background: url('/visitka//public/pixel\ name.png') no-repeat center center fixed;
+  background: url('pixel\ name.png') no-repeat center center fixed;
   background-size:70% 100%;
   animation: text-shake 3s ease-in-out infinite;
 }
 .visitka-text[data-sub-text]{
   animation: none;
-  background: url('/visitka//public/visitka-sub-info.png') no-repeat center center;
+  background: url('visitka-sub-info.png') no-repeat center center;
   background-size: 80% 80%;
 }
 
@@ -112,7 +112,7 @@ body{
   width:100%;
   display:inherit;
   height:100%;
-  background: url('/visitka//public/fav-games.png') no-repeat center center;
+  background: url('fav-games.png') no-repeat center center;
   background-size:contain;
 }
 .games-section{
