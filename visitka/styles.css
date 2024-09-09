@@ -52,6 +52,7 @@ body{
 }
 .initial-block[data-text-block]{
   flex-direction: column;
+  overflow: hidden;
 }
 .header-avatar{
   position: relative;
